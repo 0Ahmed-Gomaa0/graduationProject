@@ -1328,3 +1328,104 @@ background-color: #eee;
   header .hide .nav .icon {
     font-size: 100px;
   }
+
+.image-name img {
+    width: 700px;
+    height: 900px;
+    margin: 50px;
+}
+
+.image-name {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    background-color: #ffffff;
+}
+.Buildings h1{
+    color: white;
+    margin-bottom: 20px;
+    font-style: italic;
+    font-size: 50px;
+    font-variant: small-caps;
+}
+
+
+.articles {
+    margin-bottom: 40px;
+}
+
+.articles .main-title {
+    color: #084298;
+    text-align: center;
+    margin: 30px auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    font-style: italic;
+    font-variant: small-caps;
+}
+  .articles .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 40px;
+  }
+  .articles .box {
+    box-shadow: 0 2px 15px rgb(0 0 0 / 10%);
+    background-color: white;
+    border-radius: 6px;
+    overflow: hidden;
+    transition: transform var(--main-transition), box-shadow var(--main-transition);
+  }
+  .articles .box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 2px 15px rgb(0 0 0 / 20%);
+  }
+  .articles .box img {
+    width: 100%;
+    max-width: 100%;
+    height: 453px;
+  }
+  .articles .box .content {
+    padding: 20px;
+  }
+  .articles .box .content h3 {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: #084298;
+    white-space: nowrap;
+  }
+  .articles .box .content p {
+    margin: 10px 0 0;
+    line-height: 1.5;
+    color: #777;
+    font-weight: bold;
+  }
+  .articles .box {
+    transition: 0.3s;
+  }
+  nav {
+    align-items: center;
+  }
+  .articles .box .info {
+    padding: 20px;
+    border-top: 1px solid #e6e6e7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .articles .box .info a {
+    color: var(--main-color);
+    font-weight: bold;
+  }
+  .articles .box .info i {
+    color: var(--main-color);
+  }
+  .articles .box:hover .info i {
+    animation: moving-arrow 0.6s linear infinite;
+  }
